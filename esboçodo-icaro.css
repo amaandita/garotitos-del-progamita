@@ -1,23 +1,24 @@
-
 *{
     border: 0;
     margin: 0;
     padding: 0;
 }
- @font-face{
+
+@font-face{
 
    font-family: chakraRegular;
    src: url(Fonte/ChakraPetch-Regular.ttf); 
 }
+
 @font-face{
     font-family: chakraMedio ;
     src: url(Fonte/ChakraPetch-Medium.ttf);
 }
 
- body{
-background-color: white; 
-width: 1440px;
-height: auto;
+body{
+    background-color: white; 
+    width: 1440px;
+    height: auto;
 } 
 
 main{
@@ -60,17 +61,22 @@ hr{
 
 
 }
-#sobreNos{
+#menu_principal{
     position: relative;
-    width: 120px;
-    height: 20px;
-    background-color: #130b07;
-    color: #FF4500;
-    margin-left: 10%;
-    bottom: 20px;
-    font-family: chakraMedio;
-    font-size: 30px;
+    float: left;
+    height: auto;
+    width: 100%;
+    /* background-color: blue; */
+
 }
+
+#sobreNos div{
+    /* background-color: green; */
+    display: inline-block;
+    /* float: left; */
+    padding-top: 30px;
+    
+} 
 #sobreNos img{
     float: left;
     width: 199px;
@@ -79,26 +85,11 @@ hr{
     margin-right: 450px;
 }
 
-#menu_principal{
-    position: relative;
-    float: right;
-    margin-top: 30px;
-    /* width:100%; */
-    /* height: 30px; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* background-color: #FF4500; */
-    /* margin-left: 60%; */
-    /* top: 15px; */
-    /* align-items: center */
-    
-}
-
 #menu_principal a{
     text-decoration: none;
-    color:#FF4500;
+    color:black ;
     /* background-color:#FF4500; */
-    font-size: 22px;
+    font-size: 12px;
     padding: 5px;
 
 
@@ -112,7 +103,8 @@ hr{
 
 
 #page1{
-    background-image: url(imagem/bg_principal.jpg);
+    background-image: url(imagem/criança.2.3.png);
+    
     /* background-color: red; */
     background-repeat: no-repeat;
     width: 100%;
@@ -123,18 +115,18 @@ hr{
 
 
 .text-container{
- width: 30%;
- height: 200px;
- background-color: rgba(255, 255, 255, 0.5);
- margin-left: 180px;
- margin-top: 180px;
-position: absolute;
+    width: 30%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 180px;
+    margin-top: 180px;
+    position: absolute;
 }
 .text-container h1{
     color: rgb(8, 8, 8);
     text-align:center;
-    font-family:chakraRegular ;
-    font-size: 20px;
+    /* font-family:chakraRegular; */
+    font-size: 30px;
     padding-top: 10px;
     
 }
@@ -143,11 +135,11 @@ position: absolute;
     color: rgb(8, 8, 8);
     opacity: 100%;
     text-align: justify;
-    font-family:chakraRegular ;
-    font-size: 10px;
+    /* font-family:chakraRegular ; */
+    font-size: 15px;
     margin-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*Noticias Franklin*/
@@ -285,19 +277,12 @@ position: absolute;
     justify-content: space-between;
 }
 
- #doacao_texto{
-
-        background-color: aquamarine;
-    
-        margin-top: 20px;
-     margin-left: 15px;
-        width: 500px;
-    
-        height: 265px;
-    
-       
-
-
+#doacao_texto{
+    background-color: aquamarine;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 500px;
+    height: 265px;
 }
 
 #doacoes h2{
@@ -335,33 +320,21 @@ position: absolute;
 #doacoes li:hover{
     Background-color:#f95114;
     color: white;
-    }
+}
 
 
-    #doacoes_img{
+#doacoes_img{
+    margin-top: 20px;
+    width:400px;
+    height: 265px;
+}
 
-        margin-top: 20px;
-    
-        width:400px;
-    
-        height: 265px;
-    }
-    
-       
-    
-    #doacoes_img img{
-    
-        width: 100%;
-    
-        height: 100%;
-    
-    }
-
-
-
+#doacoes_img img{
+    width: 100%;
+    height: 100%;
+}
 
 /* Localização- Pedro */
-
 
 #container_localizacao{
     width: 100%;
@@ -406,112 +379,112 @@ position: absolute;
 
  
  /* FOOTER - Casimiro */
- footer{
-     width: 100%;
-     height: auto;
-     background-color:rgba(255,69,0,1);
-     /* text-align: center; */
-     margin:auto;
-     color: white;
-     float: left;
+footer{
+    width: 100%;
+    height: auto;
+    background-color:rgba(255,69,0,1);
+    /* text-align: center; */
+    margin:auto;
+    color: white;
+    float: left;
  }
  
  /* DIV A */
- #footerdivA{
-     width: 100%;
-     height: auto;
-     font-size: 15px;
-     /* border-bottom: 2px solid black; */
-     float: left;
- }
- #footerdivA h1{
-     padding: 10px 0px;
-     padding-left: 80px;
-     float: left;
- }
+#footerdivA{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    /* border-bottom: 2px solid black; */
+    float: left;
+}
+#footerdivA h1{
+    padding: 10px 0px;
+    padding-left: 80px;
+    float: left;
+}
  
  /* DIV B */
- #footerdivB{
-     width: 100%;
-     height: auto;
-     background-color: rgba(255,69,0,1);
-     float: left;
-     padding-top: 90px;
-     padding-bottom: 50;
- }
+#footerdivB{
+    width: 100%;
+    height: auto;
+    background-color: rgba(255,69,0,1);
+    float: left;
+    padding-top: 90px;
+    padding-bottom: 50;
+}
  
  /* DIV C */
- #footerdivC{
-     width: auto;
-     height: auto;
-     background-color: rgba(255,69,0,1);
-     float: left;
-     padding-left: 70px;
-     margin-right: 110px;
- }
- #footerdivC a{
-     background-color: rgba(255,69,0,1);
-     width: 100%;
-     height: auto;
-     display:block;
-     text-decoration: none;
-     color: white;
-     margin-bottom: 16px;
- }
- #footerdivC a:hover{
-     text-decoration: underline;
-     color: white;
- }
- #footerdivC a:active{
-     color: rgba(255,69,0,1);
-     background-color: blue;
-     transition: 0.5s all;
- }
+#footerdivC{
+    width: auto;
+    height: auto;
+    background-color: rgba(255,69,0,1);
+    float: left;
+    padding-left: 70px;
+    margin-right: 110px;
+}
+#footerdivC a{
+    background-color: rgba(255,69,0,1);
+    width: 100%;
+    height: auto;
+    display:block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 16px;
+}
+#footerdivC a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#footerdivC a:active{
+    color: rgba(255,69,0,1);
+    background-color: blue;
+    transition: 0.5s all;
+}
  
  /* DIV D */
- #footerdivD{
-     background-color:rgba(255,69,0,1);
-     width: 280px;
-     height: 265.94px;
-     float: left;
-     margin-right: 310px;
- }
- #footerdivD address{
-     width: 100%;
-     height: auto;
-     margin-bottom: 15px;
-     background-color: rgba(255,69,0,1);
-     float: left;
-     display: block;
- }
+#footerdivD{
+    background-color:rgba(255,69,0,1);
+    width: 280px;
+    height: 265.94px;
+    float: left;
+    margin-right: 310px;
+}
+#footerdivD address{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    background-color: rgba(255,69,0,1);
+    float: left;
+    display: block;
+}
  
  /* DIV E */
  #footerdivE{
-     width: auto;
-     background-color:rgba(255,69,0,1);
-     margin: auto;
-     text-align: center;
-     color: white;
-     padding-top: 80px;
-     float: left;
- }
- #footerdivE p{
-     padding-bottom: 40px;
- }
- #footerdivF{
-     background-color: rgba(255,69,0,1);
-     width: 100%;
-     height: auto;
-     float: left;
- }
+    width: auto;
+    background-color:rgba(255,69,0,1);
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    float: left;
+}
+#footerdivE p{
+    padding-bottom: 40px;
+}
+#footerdivF{
+    background-color: rgba(255,69,0,1);
+    width: 100%;
+    height: auto;
+    float: left;
+}
  .footerdivGHI{
-     display: inline-block;
-     background-color:rgba(255,69,0,1)a;
-     width: 53px;
-     height: 62px;
- }
+    display: inline-block;
+    background-color:rgba(255,69,0,1)a;
+    width: 53px;
+    height: 62px;
+}
  
- .footerdivGHI img{
-     width: 100%;
-     height: 100%;
- }
+.footerdivGHI img{
+    width: 100%;
+    height: 100%;
+}
