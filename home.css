@@ -135,7 +135,7 @@ hr{
 .text-container h1{
     color: rgb(8, 8, 8);
     text-align:center;
-    /* font-family:chakraRegular; */
+    font-family:Heebo;
     font-size: 30px;
     padding-top: 10px;
     
@@ -145,7 +145,7 @@ hr{
     color: rgb(8, 8, 8);
     opacity: 100%;
     text-align: justify;
-    /* font-family:chakraRegular ; */
+    font-family:Heebo-p;
     font-size: 15px;
     margin-top: 10px;
     padding-left: 15px;
