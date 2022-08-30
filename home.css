@@ -1,183 +1,490 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+
+   font-family: chakraRegular;
+   src: url(Fonte/ChakraPetch-Regular.ttf); 
+}
+
+@font-face{
+    font-family: chakraMedio ;
+    src: url(Fonte/ChakraPetch-Medium.ttf);
+}
+
 body{
-    background-color: antiquewhite;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: white; 
+    width: 1440px;
+    height: auto;
+} 
+
+main{
+    width: 79%;
+    height: auto;
+    margin:auto;
+    /* background-color:rgb(245, 74, 12) ; */
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-  }
-
-  /* Handle */
-::-webkit-scrollbar-thumb {
-    background: black;
-  }
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(13, 154, 83);
-}
-
-.img{
+header{
     width: 100%;
-    height: 100px;
-    background-color: rgb(249, 249, 249);
-}
+    height: 50px;
 
-#sub-title{
-    margin-left: 60px;
-    margin-right: 60px;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
+    background-image:url("imagem/header.jpg");
 }
-#sub-title p{
-    margin-top: 45px;
-}
-#sub-title li{
-    margin-top: 2px;
-}
-#sub-title .list-buttons ul{
-    list-style: none;
-    display: flex;
-}
-
-#sub-title .list-buttons li{
-    margin-right: 20px;
-    font-size: 20px;
-    width: 140px;
-    height: 40px;
-    background-color: rgb(48, 48, 48);
-    border-radius: 4px;
-    border: 1px solid black;
-    text-align: center;
-    padding-top: 14px;
-    cursor: pointer;
-    color:rgb(225, 198, 80);
-}
-
-.divider{
-    width: 94%;
-    background-color: black;
+hr{
+    width: 100%;
     height: 1px;
-    margin-left: 50px;
-    margin-right: 50px;
+    background-color:#FF4500;
+    margin-bottom: 15px;
+}
+#hr_footer{
+    width: 100%;
+    height: 1px;
+    background-color:white;
+    margin-bottom: 15px;
+}
+.titulo{
+    width: 140px;
+    height: 42px;
+    margin-left: 113px;
+    top: 31px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF4500;
+    margin-top: 50px;
+    font-family:chakraRegular ;
+
+
+}
+#menu_principal{
+    position: relative;
+    float: left;
+    height: auto;
+    width: 100%;
+    /* background-color: blue; */
+
 }
 
-.main-img{
-    width: 94%;
-    height: 600px;
-    background-color: rgb(48, 48, 48);
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    position: absolute;
-    z-index: -1;
+#sobreNos div{
+    /* background-color: green; */
+    display: inline-block;
+    /* float: left; */
+    padding-top: 30px;
+    
+} 
+#sobreNos img{
+    float: left;
+    width: 199px;
+    height: 66px;
+    padding-left: 70px;
+    margin-right: 450px;
 }
+
+#menu_principal a{
+    text-decoration: none;
+    color:black ;
+    /* background-color:#FF4500; */
+    font-size: 12px;
+    padding: 5px;
+
+
+    /* font-family: ; */
+}
+#menu_principal a:hover{
+    transition: all 1s;
+    color: white;
+    background-color: #FF4500;
+}
+
+
+#page1{
+    background-image: url(imagem/criança.2.3.png);
+    
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    /* z-index: 1; */
+    position: relative;
+}
+
 
 .text-container{
-    width: 300px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.061);
-    backdrop-filter: blur(1rem);
-    z-index: 1;
-    margin-left: 200px;
-    color: rgb(189, 19, 215);
-    margin-top: 160px;
+    width: 30%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 180px;
+    margin-top: 180px;
+    position: absolute;
 }
-
 .text-container h1{
-    text-align: center;
-    padding-top: 20px;
+    color: rgb(8, 8, 8);
+    text-align:center;
+    /* font-family:chakraRegular; */
+    font-size: 30px;
+    padding-top: 10px;
+    
 }
 
 .text-container p{
-    padding-left: 30px;
+    color: rgb(8, 8, 8);
+    opacity: 100%;
+    text-align: justify;
+    /* font-family:chakraRegular ; */
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-#sports {
-    margin-top: 650px;
-    margin-bottom: 20px;
+/*Noticias Franklin*/
+#menu_noticias h1 {/*texto h1*/
+    text-align: center;
+    float: left;/*quebrar coluna para linha*/
+    color: #FF4500;/*cor fonte*/
+    font-size: 25px; /*tamanho font*/
+    margin: 15px 20px;
+    
+}
+
+#menu_noticias {
+    margin: 15px 20px;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    /* display:flex; /*flexibilizar o componente para alinhamento
+    direção flexível: linha;
+    justificar-conteúdo: espaço ao redor; */
+}
+
+#menu_noticias a {
+    margin-left: 15px;
+    color: #ffffff;
+    text-decoration: none; /* font strength: Bold; */
+    width: auto; 
+    padding: 1% 0%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+    
+}
+
+#projetos, #dias_de_jogos, #comunidade, #ola, #oi{
+    background: #FF4500;
+    position: relative;
+    left: 350px;
+}
+
+#menu_noticias a:hover {
+    background: #FFF; 
+    color: #bfa49a;
+    transition: 1.5s all;
+}
+#borda{
+    width: 100%;
+    height: 1px;
+    background-color: #FF4500;
+    margin-top: 2%;
+}
+
+.lado_esq_noticias{
+    position: relative;
+    margin: 4.5% 40px;
+    width: 562.5px;
+    height: 240px;
+    background-color: rgb(188, 107, 0);
+    text-decoration: none;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.lado_dir_noticias{
+    position: relative;
+    width: 437.5px;
+    height: 00px;
+    /* background-color: red; */
+    float:left;
+    /* text-align: left; */
+    margin: -300px 620px;
+    color: #ffffff;
+}
+
+#text_img2{
+    margin: -89px 160px;
+    width: 437.5px;
+}
+#img_3{
+    position: relative;
+    margin: 100px 0px;
+}
+#text_img3{
+    margin: -189px 160px;
+    width: 437.5px;
+}
+#img_4{
+    position: relative;
+    margin: 200px 0px;
+}
+#text_img4{
+    margin: -289px 160px;
+    width: 437.5px;
+}
+
+#img_5{
+    position: relative;
+    margin: 300px 0px;
+}
+
+#text_img5{
+    margin: -389px 160px;
+    width: 437.5px;
+}
+
+#img_6{
+    position: relative;
+    margin: 400px 0px;
+}
+#text_img6{
+    margin: -489px 160px;
+    width: 437.5px;
+}
+
+
+/* Doações - Amanda */
+
+/* .divider { */
+    /* width: 2000px; */
+    /* background-color: black; */
+    /* height: 2px; */
+    /* margin-left:20px; */
+    /* margin-top:-5px; */
+
+
+#doacoes {
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 50px;
     margin-right: 50px;
+    display:flex;
     z-index: 1;
-    display: flex;
     justify-content: space-between;
 }
 
-#sports h2{
-    font-size: 30px;
+#doacao_texto{
+    background-color: aquamarine;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 500px;
+    height: 265px;
 }
 
-#sports ul{
-    display: flex;
+#doacoes h2{
+    text-align: center;
+    font-size: 25px;
+    padding-left:50px;
 }
 
-#sports li{
-    margin-right: 20px;
+#doacoes p{
+    text-align: justify;
+    font-size: 15px;
+    padding:10px 5px 5px 5px;
+}
+ 
+
+#doacoes ul{
+    display: block;
+    list-style: none;
+    float: left;
+}
+
+#doacoes li{
     font-size: 20px;
     width: 140px;
-    height: 40px;
-    background-color: rgb(59, 247, 12);
-    border-radius: 4px;
-    border: 1px solid black;
-    text-align: center;
+    height: 35px;
+    margin:20px;
+    background-color: #FF4500;
+    /* border-radius: 4px; */
+    border: 1px solid #FF4500;
+    text-align:center;
     padding-top: 14px;
+    color:black;
     cursor: pointer;
-    color:rgb(233, 221, 167);
+}
+#doacoes li:hover{
+    Background-color:#f95114;
+    color: white;
 }
 
 
-.img-1, .img-2, .img-3, .img-4, .img-5{
+#doacoes_img{
+    margin-top: 20px;
+    width:400px;
+    height: 265px;
+}
+
+#doacoes_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Localização- Pedro */
+
+#container_localizacao{
+    width: 100%;
+    height: 350px;
+}
+
+
+#localizacao{
+    width: 35%;
+    height: 270px;
+    background-color:#f95114;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    float: left;
+    color: white;
+
+}
+
+#localizacao h4{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 30px;
+}
+
+#localizacao p{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 50px;
+}
+#mapa{
+    width: 35%;
+    height:270px ;
+    float: left;
+    margin-top: 30px;
     margin-left: 50px;
-    margin-top: 50px;
-}
-.img-1 .container-img{
-    width: 550px;
-    height: 300px;
-    background-color: black;
-    border-radius: 4px;
-}
-
-.img-1 p{
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.img-1 span{
-    font-size: 14px;
-    font-weight: 200;
+    margin-right: 110px;
+    float: left;
 }
 
 
-/* Second img */
-.img-2 .container-img, .img-3 .container-img,
-.img-4 .container-img, .img-5 .container-img{
-    width: 260px;
-    height: 150px;
-    background-color: rgb(202, 55, 55);
-}
 
-.img-2 span, .img-3 span,
-.img-4 span, .img-5 span{
-    font-size: 14px;
-    font-weight: 200;
+ 
+ /* FOOTER - Casimiro */
+footer{
+    width: 100%;
+    height: auto;
+    background-color:rgba(255,69,0,1);
+    /* text-align: center; */
+    margin:auto;
+    color: white;
+    float: left;
+ }
+ 
+ /* DIV A */
+#footerdivA{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    /* border-bottom: 2px solid black; */
+    float: left;
 }
-
-.img-2 p, .img-3 p,
-.img-4 p, .img-5 p{
-    font-size: 18px;
-    font-weight: 600;
+#footerdivA h1{
+    padding: 10px 0px;
+    padding-left: 80px;
+    float: left;
 }
-.img-2 h2, .img-3 h2,
-.img-4 h2, .img-5 h2{
-    font-size: 18px;
-    font-weight: 600;
+ 
+ /* DIV B */
+#footerdivB{
+    width: 100%;
+    height: auto;
+    background-color: rgba(255,69,0,1);
+    float: left;
+    padding-top: 90px;
+    padding-bottom: 50;
 }
-
-.news{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    margin-right: 200px;
+ 
+ /* DIV C */
+#footerdivC{
+    width: auto;
+    height: auto;
+    background-color: rgba(255,69,0,1);
+    float: left;
+    padding-left: 70px;
+    margin-right: 110px;
+}
+#footerdivC a{
+    background-color: rgba(255,69,0,1);
+    width: 100%;
+    height: auto;
+    display:block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 16px;
+}
+#footerdivC a:hover{
+    text-decoration: underline;
+    color: white;
+}
+#footerdivC a:active{
+    color: rgba(255,69,0,1);
+    background-color: blue;
+    transition: 0.5s all;
+}
+ 
+ /* DIV D */
+#footerdivD{
+    background-color:rgba(255,69,0,1);
+    width: 280px;
+    height: 265.94px;
+    float: left;
+    margin-right: 310px;
+}
+#footerdivD address{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    background-color: rgba(255,69,0,1);
+    float: left;
+    display: block;
+}
+ 
+ /* DIV E */
+ #footerdivE{
+    width: auto;
+    background-color:rgba(255,69,0,1);
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    float: left;
+}
+#footerdivE p{
+    padding-bottom: 40px;
+}
+#footerdivF{
+    background-color: rgba(255,69,0,1);
+    width: 100%;
+    height: auto;
+    float: left;
+}
+ .footerdivGHI{
+    display: inline-block;
+    background-color:rgba(255,69,0,1)a;
+    width: 53px;
+    height: 62px;
+}
+ 
+.footerdivGHI img{
+    width: 100%;
+    height: 100%;
 }
