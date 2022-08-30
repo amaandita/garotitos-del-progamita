@@ -15,6 +15,16 @@
     src: url(Fonte/ChakraPetch-Medium.ttf);
 }
 
+@font-face{
+    font-family: Heebo;
+    src:url(Fonte/static/Heebo-Regular.ttf)
+}
+
+@font-face{
+    font-family: Heebo-p;
+    src:url(Fonte/static/Heebo-Light.ttf)
+}
+
 body{
     background-color: white; 
     width: 1440px;
