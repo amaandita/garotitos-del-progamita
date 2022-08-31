@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ff7700; */
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px #ff4500;
+}
+
+.form-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7700;
+    padding: 1rem;
+}
+.form-image img{
+    width: 31rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 5rem;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+}
+.login-button button{
+    border: none;
+    background-color: #ff4500;
+    padding: 0.4rem 1rem;
+    cursor: poiter;
+}
+
+.login-button button:hover{
+    background-color: #ff7700;
+
+}
+
+.login-button button a{
+    text-decoration: none;
+    color: white;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #ff4500;
+    margin: 0 auto;
+    position: absolute;
+}
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input-box input{
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.continue-button button{
+width: 100%;
+margin-top: 2.5rem;
+background-color: #ff4500;
+cursor: pointer;
+border: none;
+padding: 0.62rem;
+}
+.continue-button button a{
+    text-decoration: none;
+    color: white;
+}
